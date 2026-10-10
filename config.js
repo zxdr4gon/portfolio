@@ -16,17 +16,17 @@
 
 window.PORTFOLIO_CONFIG = {
   // Identity and browser tab
-  name: "Your Name",
-  shortName: "YOURNAME", // Short brand shown in the header. Set to "" to use name.
-  pageTitle: "Your Name — Developer Portfolio",
-  description: "Explore projects, experiments, and work by Your Name.",
+  name: "Syed Zainulabideen Mahdi",
+  shortName: "ZAIN", // Short brand shown in the header. Set to "" to use name.
+  pageTitle: "ZX — Developer Portfolio",
+  description: "Explore projects, experiments, and work by me.",
   themeColor: "#0b0d10",
 
   // Hero section
   role: "Developer · Builder · Problem Solver",
   headlineStart: "Turning ideas into",
   headlineAccent: "things that work.",
-  bio: "I'm Your Name, a developer who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
+  bio: "I'm Zain, a developer who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
   heroButton: "Explore my work",
   gallerySubtitle: "Projects, experiments & ideas",
 
@@ -42,51 +42,52 @@ window.PORTFOLIO_CONFIG = {
   footerNote: "Built with curiosity.",
 
   // Contact and social links
-  email: "you@example.com",
+  email: "zx.mahdi09@gmail.com",
   socials: [
-    { label: "GitHub", url: "https://github.com/YOUR-USERNAME" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/YOUR-USERNAME/" }
+    { label: "GitHub", url: "https://github.com/zxdr4gon" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/syed-zainulabideen-mahdi-2a5b80434/" },
+    { label: "Instagram", url: "https://instagram.com/zx_04.09" }
     // Add more, for example:
     // { label: "YouTube", url: "https://youtube.com/@YOUR-USERNAME" }
   ],
 
-  // Project gallery — duplicate an object to add another project.
+  // Project gallery — duplicate an entry to add another project.
   projects: [
     {
-      title: "Project One",
-      description: "A short description of what this project does.",
-      category: "Featured project",
-      url: "https://example.com/project-one",
-      image: "images/project-one.png",
+      title: "Terminal Cricket",
+      description: "A retro-style hand cricket game in your browser. Toss, bat, bowl, chase targets, view match summaries, and have fun!",
+      category: "Featured game",
+      url: "https://zxdr4gon.github.io/cricket/",
+      image: "images/cterminal.png",
       imageAlt: "Screenshot of Project One",
-      tags: ["Python", "React"]
+      tags: ["Python"]
     },
     {
-      title: "Project Two",
-      description: "A short description of what this project does.",
+      title: "VectorBoard",
+      description: "An online digital canvas with a multitude of different features.",
       category: "Web application",
-      url: "https://example.com/project-two",
-      image: "images/project-two.png",
+      url: "https://zxdr4gon.github.io/vectorboard/",
+      image: "images/vectorboard.png",
       imageAlt: "Screenshot of Project Two",
-      tags: ["JavaScript", "Node"]
+      tags: ["JavaScript", "HTML"]
     },
     {
-      title: "Project Three",
-      description: "A short description of what this project does.",
+      title: "Stats Site",
+      description: "A site that reads data from Google Sheets and displays it. For Maine East Cricket Team.",
       category: "Personal project",
-      url: "https://example.com/project-three",
-      image: "images/project-three.png",
+      url: "https://zxdr4gon.github.io/blue-demon-cricket/",
+      image: "images/bdcricket.png",
       imageAlt: "Screenshot of Project Three",
-      tags: ["HTML", "Tailwind"]
+      tags: ["HTML", "JavaScript", "CSS"]
     },
     {
-      title: "Project Four",
-      description: "A short description of what this project does.",
-      category: "Experiment",
+      title: "AP Study Hub",
+      description: "Place for study guides for the AP exams of various subjects",
+      category: "Personal Project",
       url: "https://example.com/project-four",
-      image: "images/project-four.png",
+      image: "images/apstudy.png",
       imageAlt: "Screenshot of Project Four",
-      tags: ["Python", "AI"]
+      tags: ["HTML", "AI"]
     }
   ]
 };
