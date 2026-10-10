@@ -135,12 +135,12 @@
     overlay.setAttribute("aria-hidden", "true");
 
     const category = document.createElement("span");
-    category.className = "mb-3 text-xs font-medium uppercase tracking-[0.2em] text-accent";
+    category.className = "mb-3 text-xs font-medium uppercase tracking-[0.2em] text-sky-300";
     category.textContent = safeText(project.category, "Project");
     overlay.append(category);
 
     const overlayTitle = document.createElement("span");
-    overlayTitle.className = "text-2xl font-semibold tracking-tight sm:text-3xl";
+    overlayTitle.className = "text-2xl font-semibold tracking-tight text-white sm:text-3xl";
     overlayTitle.textContent = project.title;
     overlay.append(overlayTitle);
 
@@ -148,7 +148,7 @@
     tags.className = "mt-4 flex flex-wrap gap-2";
     (Array.isArray(project.tags) ? project.tags : []).forEach((tag) => {
       const chip = document.createElement("span");
-      chip.className = "rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs";
+      chip.className = "rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs text-white";
       chip.textContent = `#${String(tag).replace(/^#/, "")}`;
       tags.append(chip);
     });
@@ -164,14 +164,14 @@
     cardInfo.className = "flex items-start justify-between gap-4 px-1 pt-4";
     const textWrap = document.createElement("div");
     const title = document.createElement("h3");
-    title.className = "font-semibold transition group-hover:text-accent";
+    title.className = "font-semibold text-slate-900 transition group-hover:text-sky-600";    
     title.textContent = project.title;
     const description = document.createElement("p");
     description.className = "mt-1 text-sm text-muted";
     description.textContent = safeText(project.description, "Explore this project.");
     textWrap.append(title, description);
     const arrow = document.createElement("span");
-    arrow.className = "mt-1 text-muted transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent";
+    arrow.className = "mt-1 text-muted transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-sky-600";    
     arrow.setAttribute("aria-hidden", "true");
     arrow.textContent = "↗";
     cardInfo.append(textWrap, arrow);
