@@ -155,7 +155,7 @@
     overlay.append(tags);
 
     const view = document.createElement("span");
-    view.className = "mt-5 text-sm font-medium text-slate-900";
+    view.className = "mt-5 text-sm font-semibold text-white";
     view.textContent = "View project ↗";
     overlay.append(view);
     imageFrame.append(overlay);
