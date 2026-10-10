@@ -146,7 +146,7 @@ const PORTFOLIO_THEME_PRESETS = {
 };
 
 // To use CUSTOM, change the hex codes above in the 'custom' list and set below line to "custom"
-const selectedTheme = "emeraldNight"; // CHANGE THIS to: "nordicMist", "sakuraBlossom", "cyberpunk", or "regalGold".
+const selectedTheme = "nordicMist"; // CHANGE THIS to: "nordicMist", "sakuraBlossom", "cyberpunk", or "regalGold".
 
 const customTheme = null; // Ignore line
 const chosenTheme =
@@ -158,19 +158,19 @@ window.PORTFOLIO_CONFIG = {
      Replace the sample values with your own details.
      shortName is the small brand shown in the header. Use "" to use your name.
   ------------------------------------------------------------------------ */
-  name: "[REPLACE] Your Name",
-  shortName: "[REPLACE] Nickname",
-  pageTitle: "[REPLACE] Your Name — Portfolio",
-  description: "[REPLACE] A short description of your portfolio.",
+  name: "Zain",
+  shortName: "Zain",
+  pageTitle: "ZX — Portfolio",
+  description: "Explore projects, experiments, and work by me..",
 
   /* ------------------------------------------------------------------------
      3. HERO SECTION
      This is the first text visitors see on your portfolio.
   ------------------------------------------------------------------------ */
-  role: "[REPLACE] Developer · Designer · Creator",
+  role: "Developer · Physicist · Student",
   headlineStart: "Turning ideas into",
   headlineAccent: "things that work.",
-  bio: "[REPLACE] Write 1–3 sentences about yourself or what you enjoy building.",
+  bio: "Hi! I'm Zain, an aspiring physicist who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
   heroButton: "Explore my work",
   gallerySubtitle: "Projects, experiments & ideas",
 
@@ -184,7 +184,7 @@ window.PORTFOLIO_CONFIG = {
   contactKicker: "02 / Contact",
   contactTitleStart: "Have an idea?",
   contactTitleAccent: "Let's connect.",
-  contactText: "[REPLACE] Add a short invitation for visitors to get in touch.",
+  contactText: "Interested in collaborating, discussing a project, or just connecting? My inbox is open.",
   contactButton: "Say hello",
   footerNote: "Built with curiosity.",
 
@@ -200,11 +200,11 @@ window.PORTFOLIO_CONFIG = {
      Replace the example email and URLs. Remove any social entries you don't
      use. Use full URLs beginning with https://.
   ------------------------------------------------------------------------ */
-  email: "[REPLACE] youremail@example.com",
+  email: "zx.mahdi09@gmail.com",
   socials: [
-    { label: "GitHub", url: "https://github.com/YOUR-USERNAME" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/YOUR-PROFILE" },
-    { label: "Instagram", url: "https://www.instagram.com/YOUR-HANDLE" }
+    { label: "GitHub", url: "https://github.com/zxdr4gon" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/syed-zainulabideen-mahdi-2a5b80434/" },
+    { label: "Instagram", url: "https://www.instagram.com/zx_04.09" }
     // To add another social, create an entry
     // Example: { label: "YouTube", url: "https://www.youtube.com/@YOUR-USERNAME" }
   ],
@@ -227,46 +227,49 @@ window.PORTFOLIO_CONFIG = {
   ------------------------------------------------------------------------ */
   projects: [
     {
-      // EXAMPLE 1: Python or data-analysis project
-      title: "[REPLACE] Python Data Project",
-      description: "[REPLACE] Describe the question this project explores and what you learned.",
-      category: "Data project",
-      url: "https://github.com/YOUR-USERNAME/YOUR-DATA-PROJECT",
-      image: "images/[REPLACE]-data-project.png",
-      imageAlt: "[REPLACE] Screenshot showing the data project",
-      tags: ["Python", "Data"]
+      title: "Terminal Cricket",
+      description: "A retro-style hand cricket game in your browser. Toss, bat, bowl, chase targets, view match summaries, and have fun!",
+      category: "Featured game",
+      url: "https://zxdr4gon.github.io/cricket/",
+      image: "images/cterminal.png",
+      imageAlt: "Terminal Cricket",
+      tags: ["Python"]
     },
     {
-      // EXAMPLE 2: Website or web application
-      title: "[REPLACE] Web Application",
-      description: "[REPLACE] Explain what the app does and who it helps.",
+      title: "VectorBoard",
+      description: "An online digital canvas with a multitude of different features.",
       category: "Web application",
-      url: "https://github.com/YOUR-USERNAME/YOUR-WEB-APP",
-      image: "images/[REPLACE]-web-app.png",
-      imageAlt: "[REPLACE] Screenshot of the web application",
-      tags: ["JavaScript", "HTML", "CSS"]
+      url: "https://zxdr4gon.github.io/vectorboard/",
+      image: "images/vectorboard.png",
+      imageAlt: "Vectorboard",
+      tags: ["JavaScript", "HTML"]
     },
     {
-      // EXAMPLE 3: Game or interactive project
-      title: "[REPLACE] Small Game",
-      description: "[REPLACE] Describe the game and one interesting feature you built.",
-      category: "Game",
-      url: "https://github.com/YOUR-USERNAME/YOUR-GAME",
-      image: "images/[REPLACE]-game.png",
-      imageAlt: "[REPLACE] Screenshot of the game",
-      tags: ["Game", "JavaScript"]
+      title: "Stats Site",
+      description: "A site that reads data from Google Sheets and displays it. For Maine East Cricket Team.",
+      category: "Personal project",
+      url: "https://zxdr4gon.github.io/blue-demon-cricket/",
+      image: "images/bdcricket.png",
+      imageAlt: "MEHS Cricket Stats",
+      tags: ["HTML", "JavaScript", "CSS"]
     },
     {
-      // EXAMPLE 4: Command-line tool or library (a live demo is not required)
-      title: "[REPLACE] Developer Tool",
-      description: "[REPLACE] Explain what the tool automates or makes easier.",
-      category: "Developer tool",
-      url: "https://github.com/YOUR-USERNAME/YOUR-TOOL",
-      image: "images/[REPLACE]-tool.png",
-      imageAlt: "[REPLACE] Screenshot or illustration of the tool",
-      tags: ["Python", "CLI"]
+      title: "Portfolio Site",
+      description: "A digital space to display all your projects.",
+      category: "Personal project",
+      url: "https://zxdr4gon.github.io/portfolio_temp/",
+      image: "images/port_temp.png",
+      imageAlt: "Portfolio Template",
+      tags: ["HTML", "JavaScript"]
+    },
+    {
+      title: "AP Study Hub",
+      description: "Place for study guides for the AP exams of various subjects",
+      category: "Personal Project",
+      url: "https://example.com/project-four",
+      image: "images/apstudy.png",
+      imageAlt: "AP Study Hub",
+      tags: ["HTML", "AI"]
     }
-    // COPY-PASTE an entry here to showcase more projects
-    // MAKE SURE YOU REMEMBER A COMMA (,) AFTER EACH ENTRY
   ]
 };
