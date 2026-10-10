@@ -23,7 +23,7 @@ window.PORTFOLIO_CONFIG = {
   themeColor: "#0b0d10",
 
   // Hero section
-  role: "Developer · Builder · Problem Solver",
+  role: "Developer · ?Physicist · Student",
   headlineStart: "Turning ideas into",
   headlineAccent: "things that work.",
   bio: "I'm Zain, a developer who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
