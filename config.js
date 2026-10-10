@@ -17,8 +17,8 @@
 window.PORTFOLIO_CONFIG = {
   // Identity and browser tab
   name: "Syed Zainulabideen Mahdi",
-  shortName: "ZAIN", // Short brand shown in the header. Set to "" to use name.
-  pageTitle: "ZX — Developer Portfolio",
+  shortName: "ZX", // Short brand shown in the header. Set to "" to use name.
+  pageTitle: "ZX — My Portfolio",
   description: "Explore projects, experiments, and work by me.",
   themeColor: "#0b0d10",
 
@@ -26,12 +26,12 @@ window.PORTFOLIO_CONFIG = {
   role: "Developer · ?Physicist · Student",
   headlineStart: "Turning ideas into",
   headlineAccent: "things that work.",
-  bio: "I'm Zain, a developer who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
+  bio: "I'm Zain, an aspiring physicist who enjoys building useful tools, exploring new technologies, and solving interesting problems.",
   heroButton: "Explore my work",
   gallerySubtitle: "Projects, experiments & ideas",
 
   // Section headings
-  projectsKicker: "01 / Portfolio",
+  projectsKicker: "01 / Projects",
   projectsTitle: "Things I've built",
   projectsIntro: "From small experiments to full projects, here's what I've been working on.",
   contactKicker: "02 / Contact",
