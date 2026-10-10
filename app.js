@@ -87,14 +87,14 @@
     link.href = safeUrl(social.url);
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.className = "transition hover:text-white";
+    link.className = "transition hover:text-slate-900";
     socialsContainer.append(link);
   });
   if (email) {
     const mail = document.createElement("a");
     mail.textContent = "Email ↗";
     mail.href = `mailto:${email}`;
-    mail.className = "transition hover:text-white";
+    mail.className = "transition hover:text-slate-900";
     socialsContainer.append(mail);
   }
 
@@ -155,7 +155,7 @@
     overlay.append(tags);
 
     const view = document.createElement("span");
-    view.className = "mt-5 text-sm font-medium text-white";
+    view.className = "mt-5 text-sm font-medium text-slate-900";
     view.textContent = "View project ↗";
     overlay.append(view);
     imageFrame.append(overlay);
