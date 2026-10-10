@@ -7,7 +7,7 @@ A static portfolio template built with HTML, Tailwind CSS CDN, and vanilla JavaS
 - `index.html` — layout and visual design. Most users should not need to edit this.
 - `config.js` — personal details, social links, section copy, and project list.
 - `app.js` — reads `config.js` and renders the page.
-- `images/` — put project screenshots here.
+- `images/` — put project screenshots & `favicon.png` (logo) here.
 
 ## Personalize your portfolio
 
