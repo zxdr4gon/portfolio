@@ -1,48 +1,62 @@
-# Replicable Developer Portfolio
+# Zain's Portfolio
 
-A static portfolio template built with HTML, Tailwind CSS CDN, and vanilla JavaScript. It works on GitHub Pages and does not need a build step.
+A responsive personal portfolio built with HTML, Tailwind CSS via CDN, and vanilla JavaScript. It is deployed as a static GitHub Pages site and does not require a build step.
 
 ## Files
 
-- `index.html` — layout and visual design. Most users should not need to edit this.
-- `config.js` — personal details, social links, section copy, and project list.
-- `app.js` — reads `config.js` and renders the page.
-- `images/` — put project screenshots & `favicon.png` (logo) here.
+- `index.html` — page structure and visual design.
+- `config.js` — personal information, theme presets, links, and project content.
+- `app.js` — applies the theme and renders content from the configuration.
+- `images/` — project screenshots and favicon.
+- `app_test.js`, `config_test.js`, `test.html` — existing test/experimentation files; the deployed homepage uses `index.html`.
 
-## Personalize your portfolio
+## Update portfolio content
 
-1. Open `config.js`.
-2. Replace `Your Name`, the short brand, bio, headings, email, and social URLs.
-3. Update the `projects` array. Each project supports:
-   - `title`: project name
-   - `description`: short summary under the card
-   - `category`: small label in the hover overlay
-   - `url`: live demo or repository URL
-   - `image`: screenshot path, e.g. `images/weather-app.png`
-   - `imageAlt`: accessible image description
-   - `tags`: technology names, e.g. `["Python", "Flask"]`
-4. Put each screenshot in the `images/` folder. Use exact filename capitalization. If you leave `image` empty or the image cannot load, a placeholder is used.
-5. Save and commit the changes.
+Most personal changes should be made in `config.js`, not in the HTML.
 
-You can add as many project objects as you want. To remove a card, remove that project object from the array. Keep commas between objects, but do not leave a comma after the last object if you want maximum compatibility with editors.
+- Edit `name`, `shortName`, `pageTitle`, and `description`.
+- Update the hero role, headline, and bio.
+- Edit the About and Contact section text.
+- Add or remove entries in `socials`.
+- Update the `projects` array to add, remove, or reorder cards.
+- Place project screenshots in `images/` and use their relative paths, such as `images/vectorboard.png`.
 
-## Test locally
+Project entries support a title, description, category, live URL, screenshot path, image alt text, and technology tags. Keep descriptions specific and concise. Only use links that actually point to the intended project.
 
-Keep `index.html`, `config.js`, and `app.js` in the same directory. Open `index.html` in a browser. If your browser blocks local file scripts, use VS Code's Live Server extension or test after uploading to GitHub Pages.
+## Themes
 
-## Publish on GitHub Pages
+Change `selectedTheme` in `config.js`. Available presets:
 
-1. Create a repository on GitHub and upload `index.html`, `config.js`, `app.js`, and the `images/` folder.
+- `cyberpunk`
+- `sunsetGlow`
+- `matchaStudio`
+- `espressoBar`
+- `editorialPaper`
+- `nordicMist`
+- `emeraldNight`
+- `regalGold` (current default)
+- `velvetRose`
+- `sakuraBlossom`
+- `custom`
+
+Each palette defines seven colors: `canvas`, `surface`, `line`, `muted`, `accent`, `foreground`, and `selection`. To create a custom palette, edit the `custom` object and set `selectedTheme = "custom"`. You can also assign an object with all seven keys to `customTheme`.
+
+## Preview and deployment
+
+For local preview, open `index.html` in a modern browser. If local file restrictions prevent scripts from running, use VS Code's Live Server extension.
+
+To deploy with GitHub Pages:
+
+1. Commit the updated files to `main`.
 2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
-4. Wait for deployment and open the URL shown on the Pages settings screen.
+3. Choose **Deploy from a branch**, then select `main` and `/(root)`.
+4. Save and wait for deployment.
 
-## Make a copy for a friend
+The page loads Tailwind CSS and Google Fonts from online CDNs, so those parts of the design need an internet connection.
 
-Friends can use **Use this template** (if enabled on the repository) or fork the repository, then change only `config.js` and the files in `images/`. Each person needs to publish their own repository using GitHub Pages.
+## Before publishing changes
 
-## Notes
-
-- This is a client-side static site; no passwords or secret keys belong in `config.js`.
-- External libraries and the optional Google font need an internet connection.
-- This template uses Tailwind's CDN for ease of use. For a larger production site, compile Tailwind CSS instead.
+- [ ] Check the theme on both desktop and mobile.
+- [ ] Verify each project and social link.
+- [ ] Confirm screenshots load and have accurate alt text.
+- [ ] Check text contrast after changing theme colors.
