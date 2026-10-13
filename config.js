@@ -266,7 +266,7 @@ window.PORTFOLIO_CONFIG = {
       title: "AP Study Hub",
       description: "Place for study guides for the AP exams of various subjects",
       category: "Personal Project",
-      url: "https://example.com/project-four",
+      url: "https://zxdr4gon.github.io/ap-study-hub/",
       image: "images/apstudy.png",
       imageAlt: "AP Study Hub",
       tags: ["HTML", "AI"]
