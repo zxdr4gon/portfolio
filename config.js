@@ -17,7 +17,7 @@
    1. THEME PRESETS
    --------------------------------------------------------------------------
    Choose one preset using selectedTheme below:
-   "minimal", "ocean", "forest", or "warm".
+   "cyberpunk", "sunsetGlow", "matchaStudio", "espressoBar", "editorialPaper", "nordicMist", "emeraldNight", "regalGold", "velvetRose", "sakuraBlossom", or "custom".
 
    To create your own theme instead, set customTheme to an object containing
    ALL seven colors shown in the examples. Leave it as null to use a preset.
@@ -146,7 +146,7 @@ const PORTFOLIO_THEME_PRESETS = {
 };
 
 // To use CUSTOM, change the hex codes above in the 'custom' list and set below line to "custom"
-const selectedTheme = "regalGold"; // CHANGE THIS to: "nordicMist", "sakuraBlossom", "cyberpunk", or "regalGold".
+const selectedTheme = "regalGold"; // Choose any preset listed above, or "custom".
 
 const customTheme = null; // Ignore line
 const chosenTheme =
@@ -161,7 +161,7 @@ window.PORTFOLIO_CONFIG = {
   name: "Zain",
   shortName: "Zain",
   pageTitle: "ZX — Portfolio",
-  description: "Explore projects, experiments, and work by me..",
+  description: "Explore software projects, experiments, and tools built by Zain.",
 
   /* ------------------------------------------------------------------------
      3. HERO SECTION
@@ -178,12 +178,15 @@ window.PORTFOLIO_CONFIG = {
      4. SECTION TEXT
      These are the headings and short descriptions for each section.
   ------------------------------------------------------------------------ */
-  projectsKicker: "01 / Projects",
+  projectsKicker: "01 / Selected work",
   projectsTitle: "Things I've built",
-  projectsIntro: "A selection of projects and experiments I've worked on.",
-  contactKicker: "02 / Contact",
-  contactTitleStart: "Have an idea?",
-  contactTitleAccent: "Let's connect.",
+  projectsIntro: "From browser-based games to practical tools and study resources, these are projects I have built and iterated on.",
+  aboutKicker: "02 / About",
+  aboutTitle: "Curiosity, then creation.",
+  aboutText: "I'm Zain, an aspiring physicist and developer who enjoys building useful tools, exploring new technologies, and solving interesting problems. My projects range from cricket and study tools to experiments with interactive web applications.",
+  aboutLinks: [],
+  contactKicker: "03 / Contact",
+  contactTitle: "Have an idea? Let's connect.",
   contactText: "Interested in collaborating, discussing a project, or just connecting? My inbox is open.",
   contactButton: "Say hello",
   footerNote: "Built with curiosity.",
@@ -232,43 +235,43 @@ window.PORTFOLIO_CONFIG = {
       category: "Featured game",
       url: "https://zxdr4gon.github.io/cricket/",
       image: "images/cterminal.png",
-      imageAlt: "Terminal Cricket",
+      imageAlt: "Terminal Cricket browser game interface",
       tags: ["Python"]
     },
     {
       title: "VectorBoard",
-      description: "An online digital canvas with a multitude of different features.",
+      description: "A browser-based digital whiteboard for sketching ideas with drawing tools and interactive canvas features.",
       category: "Web application",
       url: "https://zxdr4gon.github.io/vectorboard/",
       image: "images/vectorboard.png",
-      imageAlt: "Vectorboard",
+      imageAlt: "VectorBoard digital whiteboard interface",
       tags: ["JavaScript", "HTML"]
     },
     {
       title: "Stats Site",
-      description: "A site that reads data from Google Sheets and displays it. For Maine East Cricket Team.",
+      description: "A cricket statistics site for Maine East that reads team data from Google Sheets and presents it in an accessible web interface.",
       category: "Personal project",
       url: "https://zxdr4gon.github.io/blue-demon-cricket/",
       image: "images/bdcricket.png",
-      imageAlt: "MEHS Cricket Stats",
+      imageAlt: "Maine East cricket statistics dashboard",
       tags: ["HTML", "JavaScript", "CSS"]
     },
     {
       title: "Portfolio Site",
-      description: "A digital space to display all your projects.",
+      description: "A configurable portfolio template that separates personal content and theme settings from the page layout.",
       category: "Personal project",
       url: "https://zxdr4gon.github.io/portfolio_temp/",
       image: "images/port_temp.png",
-      imageAlt: "Portfolio Template",
+      imageAlt: "Portfolio template project page",
       tags: ["HTML", "JavaScript"]
     },
     {
       title: "AP Study Hub",
-      description: "Place for study guides for the AP exams of various subjects",
-      category: "Personal Project",
+      description: "A collection of study guides designed to help organize review material for AP subjects.",
+      category: "Education tool",
       url: "https://zxdr4gon.github.io/ap-study-hub/",
       image: "images/apstudy.png",
-      imageAlt: "AP Study Hub",
+      imageAlt: "AP Study Hub study resources page",
       tags: ["HTML", "AI"]
     }
   ]
