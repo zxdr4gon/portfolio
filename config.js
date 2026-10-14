@@ -146,7 +146,7 @@ const PORTFOLIO_THEME_PRESETS = {
 };
 
 // To use CUSTOM, change the hex codes above in the 'custom' list and set below line to "custom"
-const selectedTheme = "regalGold"; // Choose any preset listed above, or "custom".
+const selectedTheme = "nordicMist"; // Choose any preset listed above, or "custom".
 
 const customTheme = null; // Ignore line
 const chosenTheme =
