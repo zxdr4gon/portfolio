@@ -17,7 +17,7 @@
    1. THEME PRESETS
    --------------------------------------------------------------------------
    Choose one preset using selectedTheme below:
-   "cyberpunk", "sunsetGlow", "matchaStudio", "espressoBar", "editorialPaper", "nordicMist", "emeraldNight", "regalGold", "velvetRose", "sakuraBlossom", or "custom".
+   "cyberpunk", "sunsetGlow", "matchaStudio", "espressoBar", "editorialPaper", "nordicMist", "nordicNight", "emeraldNight", "regalGold", "velvetRose", "sakuraBlossom", or "custom".
 
    To create your own theme instead, set customTheme to an object containing
    ALL seven colors shown in the examples. Leave it as null to use a preset.
@@ -89,6 +89,17 @@ const PORTFOLIO_THEME_PRESETS = {
     selection: "#99f6e4"      // Ice mint selection
   },
 
+  // Nordic mist after dark: deep fjord blue with glowing teal
+  nordicNight: {
+    canvas: "#0b1518",        // Polar night
+    surface: "#122126",       // Dark slate water
+    line: "#22383e",          // Deep glacier line
+    muted: "#8aa8b0",         // Frosted slate text
+    accent: "#2dd4bf",        // Aurora teal
+    foreground: "#e6f1f2",    // Snow white text
+    selection: "#134e4a"      // Deep teal selection
+  },
+
   // Rich deep emerald with mint and sage accents
   emeraldNight: {
     canvas: "#091a13",        // Deep emerald forest shade
@@ -148,6 +159,11 @@ const PORTFOLIO_THEME_PRESETS = {
 // To use CUSTOM, change the hex codes above in the 'custom' list and set below line to "custom"
 const selectedTheme = "nordicMist"; // Choose any preset listed above, or "custom".
 
+// Optional second palette for dark mode. Visitors get a light/dark toggle, and
+// the site follows their device setting by default. Set to null to always use
+// selectedTheme only.
+const selectedDarkTheme = "nordicNight";
+
 const customTheme = null; // Ignore line
 const chosenTheme =
   customTheme || PORTFOLIO_THEME_PRESETS[selectedTheme] || PORTFOLIO_THEME_PRESETS.custom;
@@ -197,6 +213,7 @@ window.PORTFOLIO_CONFIG = {
      To use your own colors, fill in customTheme instead.
   ------------------------------------------------------------------------ */
   theme: chosenTheme,
+  darkTheme: (selectedDarkTheme && PORTFOLIO_THEME_PRESETS[selectedDarkTheme]) || null,
 
   /* ------------------------------------------------------------------------
      6. CONTACT AND SOCIAL LINKS
@@ -220,6 +237,8 @@ window.PORTFOLIO_CONFIG = {
      - category: small label shown on the project image
      - url: full URL to the live project or its repository
      - image: path to a screenshot in images/, or "" for an automatic placeholder
+     - imageSmall: optional smaller copy (about 640px wide) that phones load instead
+     - sourceUrl: optional link to the code repository
      - imageAlt: short description of the screenshot for accessibility
      - tags: array of technologies or topics
 
@@ -234,7 +253,8 @@ window.PORTFOLIO_CONFIG = {
       description: "A retro-style hand cricket game in your browser. Toss, bat, bowl, chase targets, view match summaries, and have fun!",
       category: "Featured game",
       url: "https://zxdr4gon.github.io/cricket/",
-      image: "images/cterminal.png",
+      image: "images/cterminal.webp",
+      imageSmall: "images/cterminal-640.webp",
       imageAlt: "Terminal Cricket browser game interface",
       tags: ["Python"]
     },
@@ -243,7 +263,8 @@ window.PORTFOLIO_CONFIG = {
       description: "A browser-based digital whiteboard for sketching ideas with drawing tools and interactive canvas features.",
       category: "Web application",
       url: "https://zxdr4gon.github.io/vectorboard/",
-      image: "images/vectorboard.png",
+      image: "images/vectorboard.webp",
+      imageSmall: "images/vectorboard-640.webp",
       imageAlt: "VectorBoard digital whiteboard interface",
       tags: ["JavaScript", "HTML"]
     },
@@ -252,7 +273,8 @@ window.PORTFOLIO_CONFIG = {
       description: "A cricket statistics site for Maine East that reads team data from Google Sheets and presents it in an accessible web interface.",
       category: "Personal project",
       url: "https://zxdr4gon.github.io/blue-demon-cricket/",
-      image: "images/bdcricket.png",
+      image: "images/bdcricket.webp",
+      imageSmall: "images/bdcricket-640.webp",
       imageAlt: "Maine East cricket statistics dashboard",
       tags: ["HTML", "JavaScript", "CSS"]
     },
@@ -261,7 +283,8 @@ window.PORTFOLIO_CONFIG = {
       description: "A configurable portfolio template that separates personal content and theme settings from the page layout.",
       category: "Personal project",
       url: "https://zxdr4gon.github.io/portfolio_temp/",
-      image: "images/port_temp.png",
+      image: "images/port_temp.webp",
+      imageSmall: "images/port_temp-640.webp",
       imageAlt: "Portfolio template project page",
       tags: ["HTML", "JavaScript"]
     },
@@ -270,7 +293,8 @@ window.PORTFOLIO_CONFIG = {
       description: "A collection of study guides designed to help organize review material for AP subjects.",
       category: "Education tool",
       url: "https://zxdr4gon.github.io/ap-study-hub/",
-      image: "images/apstudy.png",
+      image: "images/apstudy.webp",
+      imageSmall: "images/apstudy-640.webp",
       imageAlt: "AP Study Hub study resources page",
       tags: ["HTML", "AI"]
     }
