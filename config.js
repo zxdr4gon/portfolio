@@ -289,6 +289,26 @@ window.PORTFOLIO_CONFIG = {
       tags: ["HTML", "JavaScript"]
     },
     {
+      title: "Stint | Logging and tracking",
+      description: "Log time spent on your activities with this app.",
+      category: "Personal project",
+      url: "https://zxdr4gon.github.io/hourtrack/",
+      image: "images/hourtrack.webp",
+      imageSmall: "images/hourtrack-640.webp",
+      imageAlt: "Hour tracking project page",
+      tags: ["HTML", "JavaScript", "CSS"]
+    },
+    {
+      title: "Checklist",
+      description: "A simple, no-noise way to track your to-do tasklist",
+      category: "Personal project",
+      url: "https://zxdr4gon.github.io/checklist/",
+      image: "images/tasklist.webp",
+      imageSmall: "images/tasklist-640.webp",
+      imageAlt: "Checklist project page",
+      tags: ["HTML", "JavaScript"]
+    },
+    {
       title: "AP Study Hub",
       description: "A collection of study guides designed to help organize review material for AP subjects.",
       category: "Education tool",
