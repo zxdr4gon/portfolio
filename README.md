@@ -66,8 +66,8 @@ The fonts come from Google Fonts. After the first visit, the service worker cach
 
 Once the site is live on GitHub Pages (HTTPS is required):
 
-- **Android / Chrome / Edge:** tap the **Install app** button in the header, or use the browser menu → *Install app*.
-- **iPhone / iPad (Safari):** tap **Share → Add to Home Screen**. The site shows this tip once to iPhone visitors.
+- **Android / Chrome / Edge:** tap the small **Install app** link in the footer, or use the browser menu → *Install app*.
+- **iPhone / iPad (Safari):** tap **Share → Add to Home Screen**. Tapping the footer link on iPhone shows this tip.
 
 The installed app opens full-screen with a bottom tab bar. Long-pressing its icon on Android shows shortcuts to Projects and Contact.
 
